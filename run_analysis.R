@@ -26,7 +26,7 @@ names(s) <- "Subject"
 
 tidyDataSet <- cbind(s, y, x)
 tidyDataFile <- "C:/Users/Madhuri/Desktop/R/df/tidy_dataset.txt"
-tidyDataFileAVGtxt <- "C:/Users/Madhuri/Desktop/R/df/tidy_data_mean.txt"
+tidyDataFileAVGtxt <- "C:/Users/Madhuri/Desktop/R/df/tidy_data.txt"
 
 p <- tidyDataSet[, 3:dim(tidyDataSet)[2]] 
 tidyDataAVGSet <- aggregate(p,list(tidyDataSet$Subject, tidyDataSet$Activity), mean)
