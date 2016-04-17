@@ -34,5 +34,5 @@ tidyDataAVGSet <- aggregate(p,list(tidyDataSet$Subject, tidyDataSet$Activity), m
 names(tidyDataAVGSet)[1] <- "Subject"
 names(tidyDataAVGSet)[2] <- "Activity"
 
-write.table(tidyDataSet, tidyDataFile)
-write.table(tidyDataAVGSet, tidyDataFileAVGtxt)
+write.table(tidyDataSet, tidyDataFile,row.name=FALSE)
+write.table(tidyDataAVGSet, tidyDataFileAVGtxt,row.name=FALSE)
